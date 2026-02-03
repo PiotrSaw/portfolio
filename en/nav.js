@@ -11,11 +11,11 @@ class MyNav extends HTMLElement {
 
             <nav>
               <ul>
-                <li><a href="../pl/index.html" class="nav-link">Home Page</a></li>
-                <li><a href="../pl/projects.html" class="nav-link">Projects</a></li>
-                <li><a href="../pl/technologies.html" class="nav-link">Technologies</a></li>
-                <li><a href="../pl/education.html" class="nav-link">Education</a></li>
-                <li><a href="../pl/contact.html" class="nav-link">Contact</a></li>
+                <li><a href="../en/index.html" class="nav-link">Home Page</a></li>
+                <li><a href="../en/projects.html" class="nav-link">Projects</a></li>
+                <li><a href="../en/technologies.html" class="nav-link">Technologies</a></li>
+                <li><a href="../en/education.html" class="nav-link">Education</a></li>
+                <li><a href="../en/contact.html" class="nav-link">Contact</a></li>
               </ul>
             </nav>
 
