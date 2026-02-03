@@ -49,13 +49,13 @@
 }
 
 /* Po najechaniu na kartę, ikonka zmienia kolory */
-.contact-card:hover .icon-box {
+.tile-card:hover .icon-box {
     background-color: var(--accent-color);
     color: white;
 }
 
 /* Tytuł (np. "Napisz Email") */
-.contact-card h3 {
+.tile-card h3 {
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
     font-weight: 600;
@@ -69,6 +69,6 @@
 }
 
 /* Po najechaniu tekst robi się niebieski */
-.contact-card:hover .link-text {
+.tile-card:hover .link-text {
     color: var(--accent-color);
 }
