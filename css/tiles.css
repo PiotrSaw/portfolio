@@ -1,5 +1,5 @@
 /* Kontener siatki - kafelki obok siebie */
-.contact-grid {
+.tile-grid {
     display: grid;
     /* Automatycznie dopasowuje kolumny, minimum 250px szerokości */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
@@ -8,7 +8,7 @@
 }
 
 /* Wygląd pojedynczego kafla (który jest linkiem) */
-.contact-card {
+.tile-card {
     background: white;
     padding: 2.5rem 1.5rem;
     border-radius: 12px;
@@ -26,7 +26,7 @@
 }
 
 /* Efekt po najechaniu na kafelek */
-.contact-card:hover {
+.tile-card:hover {
     transform: translateY(-5px); /* Lekkie uniesienie */
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     border-color: var(--accent-color); /* Niebieska ramka */
