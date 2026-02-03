@@ -20,7 +20,7 @@ class MyNav extends HTMLElement {
             </nav>
 
             <div class="language-switch">
-                <a href="../pl/index.html" class="lang-link" title="Switch to Polish">
+                <a href="../pl/index.html" class="lang-link" title="Przełącz na Polski">
                     <img src="https://flagcdn.com/w40/pl.png" srcset="https://flagcdn.com/w80/pl.png 2x" width="20" height="15" alt="PL Flag" class="flag-icon"> Polski
                 </a>
             </div>
