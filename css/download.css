@@ -1,0 +1,44 @@
+/* Styl przycisku pobierania */
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+    background-color: var(--accent-color);
+    color: white !important;
+    
+    padding: 12px 24px;
+    border-radius: 8px;
+    
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(59, 130, 246, 0.3);
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+/* Wygląd po najechaniu myszką (Hover) */
+.btn-download:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(59, 130, 246, 0.4);
+}
+
+/* Wygląd po kliknięciu (Active) */
+.btn-download:active {
+    transform: translateY(0);
+}
+
+/* Mała animacja samej strzałki przy najechaniu */
+.btn-download:hover svg {
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(3px); }
+}

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Piotr Sawecki</title>
+    <meta
+      name="keywords"
+      content="Piotr Sawecki, portfolio, developer, programista"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/download.css" />
+
+    <script src="./nav.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app-layout">
+      <aside class="sidebar">
+        <my-nav></my-nav>
+      </aside>
+
+      <div class="content-wrapper">
+        <header class="mobile-header">
+          <div id="mobile-menu-trigger"></div>
+          <span class="logo-mobile">Piotr Sawecki</span>
+        </header>
+
+        <main>
+          <h1>Piotr Sawecki</h1>
+          <p class="intro">Backend Developer & Creative Coder</p>
+
+          <section class="card">
+            <h2>O mnie</h2>
+            <p>
+              Jestem studentem informatyki (II stopnia) na Politechnice
+              Lubelskiej. Programowanie jest moją pasją od czasów liceum. W
+              wolnych chwilach piszę na swój użytek programy, które pomagają w
+              codziennym życiu. Poza informatyką interesuję się rozwiązywaniem
+              różnego rodzaju łamigłówek, zagadek logicznych oraz sportem.
+            </p>
+          </section>
+
+          <section class="card">
+            <h2>Poszukuję pracy</h2>
+            <p>
+              Szukam pracy jako Backend Developer w technologiach Java, Node.js,
+              SQL. Jestem kreatywny i nie boję się nowych wyzwań oraz pracy w
+              zespole. Potrafię pracować również w wykorzystaniem najnowszych
+              technologii takich jak AI. Zależy mi na rozwoju swoich
+              umiejętności zarówno technicznych, jak i miękkich. Chętnie podejmę
+              się pracy stacjonarnej jak i zdalnej.
+            </p>
+          </section>
+
+          <section class="card">
+            <h2>CV</h2>
+            <p>
+              <a
+                class="btn-download"
+                href="../cv/Piotr_Sawecki_CV_PL.pdf"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Pobierz CV (PDF)</span>
+              </a>
+            </p>
+          </section>
+        </main>
+
+        <footer>&copy; 2026 Piotr Sawecki</footer>
+      </div>
+    </div>
+  </body>
+</html>

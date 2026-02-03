@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Przekierowywanie...</title>
+    <script>
+        // Sprawdź język przeglądarki
+        var lang = navigator.language || navigator.userLanguage; 
+        
+        // Jeśli język to polski, idź do folderu pl, w przeciwnym razie do en
+        if (lang.startsWith('pl')) {
+            window.location.replace('./pl/index.html');
+        } else {
+            window.location.replace('./en/index.html');
+        }
+    </script>
+</head>
+<body>
+    <p>Wybierz język / Select language:</p>
+    <a href="./pl/index.html">Polski</a> | <a href="./en/index.html">English</a>
+</body>
+</html>

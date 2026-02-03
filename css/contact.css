@@ -1,0 +1,74 @@
+/* Kontener siatki - kafelki obok siebie */
+.contact-grid {
+    display: grid;
+    /* Automatycznie dopasowuje kolumny, minimum 250px szerokości */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Wygląd pojedynczego kafla (który jest linkiem) */
+.contact-card {
+    background: white;
+    padding: 2.5rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-decoration: none; /* USUWA PODKREŚLENIE LINKU */
+    color: var(--text-primary);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centruje wszystko w poziomie */
+    text-align: center;
+    
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    border: 1px solid transparent; /* Rezerwacja miejsca na ramkę */
+}
+
+/* Efekt po najechaniu na kafelek */
+.contact-card:hover {
+    transform: translateY(-5px); /* Lekkie uniesienie */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-color: var(--accent-color); /* Niebieska ramka */
+}
+
+/* Kontener na ikonkę (kółko w tle) */
+.icon-box {
+    width: 70px;
+    height: 70px;
+    background-color: #eff6ff; /* Bardzo jasny niebieski (tło ikony) */
+    color: var(--accent-color); /* Kolor samej ikony */
+    border-radius: 50%; /* Robi kółko */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Po najechaniu na kartę, ikonka zmienia kolory */
+.contact-card:hover .icon-box {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+/* Tytuł (np. "Napisz Email") */
+.contact-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Tekst linku (np. adres email) */
+.link-text {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+/* Po najechaniu tekst robi się niebieski */
+.contact-card:hover .link-text {
+    color: var(--accent-color);
+}

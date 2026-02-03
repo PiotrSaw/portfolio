@@ -1,0 +1,155 @@
+/* Kontener wewnątrz Web Componentu */
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 2rem;
+}
+
+/* Sekcja profilu (góra sidebara) */
+.profile-section {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.avatar-placeholder {
+    width: 80px;
+    height: 80px;
+    background: #333;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 0 auto 1rem;
+    border: 2px solid var(--accent-color);
+}
+
+.name {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* --- LISTA LINKÓW --- */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin-bottom: 0.5rem;
+}
+
+/* --- ANIMACJA LINKÓW (Kluczowy punkt 4) --- */
+.nav-link {
+    display: block;
+    padding: 12px 20px;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    position: relative;
+    overflow: hidden; /* Ważne dla animacji tła */
+    transition: color 0.3s ease;
+    border-radius: 8px;
+    font-weight: 500;
+    z-index: 1; /* Aby tekst był nad tłem */
+}
+
+/* Pseudo-element tworzący tło */
+.nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent-color);
+    z-index: -1; /* Pod tekstem */
+    
+    /* Magia animacji */
+    transform: scaleX(0); /* Domyślnie szerokość 0 */
+    transform-origin: right; /* Przy wyjściu kurczy się do prawej (efekt przejścia) */
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Stan Hover */
+.nav-link:hover {
+    color: #fff;
+}
+
+.nav-link:hover::before {
+    transform: scaleX(1); /* Pełna szerokość */
+    transform-origin: left; /* Przy wejściu rośnie od lewej */
+}
+
+/* --- FLAG SWITCHER (Kluczowy punkt 2) --- */
+.language-switch {
+    margin-top: auto; /* Dopycha do dołu */
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.lang-link {
+    display: flex;
+    align-items: center;
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.flag-icon {
+    
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 2px;
+    box-shadow: 0 0 1px rgba(0,0,0,0.5);
+}
+
+.lang-link {
+    display: flex;
+    align-items: center;
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+/* --- HAMBURGER MENU (IKONA) --- */
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+}
+
+/* Przycisk zamknięcia wewnątrz menu mobilnego */
+#close-menu-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none; /* Ukryty na desktopie */
+}
+
+@media (max-width: 768px) {
+    #close-menu-btn {
+        display: block;
+    }
+}
