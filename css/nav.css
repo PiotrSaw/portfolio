@@ -152,4 +152,9 @@ nav li {
     #close-menu-btn {
         display: block;
     }
+
+    .nav-container {
+        padding-bottom: 5rem; 
+        box-sizing: border-box;
+    }
 }

@@ -127,6 +127,9 @@ h1 {
     .sidebar {
         transform: translateX(-100%);
         box-shadow: 5px 0 15px rgba(0,0,0,0.2);
+
+        height: 100dvh; 
+        overflow-y: auto;
     }
 
     /* Klasa dodawana przez JS po kliknięciu hamburgera */
