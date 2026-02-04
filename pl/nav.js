@@ -1,6 +1,12 @@
 class MyNav extends HTMLElement {
     connectedCallback() {
       const currentPath = window.location.pathname;
+
+      let switchLangLink = '../en/index.html';
+
+      if(currentPath.includes('/pl/')) {
+        switchLangLink = currentPath.replace('/pl/', '/en/');
+      }
       
       this.innerHTML = `
         <div class="nav-container">
@@ -20,7 +26,7 @@ class MyNav extends HTMLElement {
             </nav>
 
             <div class="language-switch">
-                <a href="../en/index.html" class="lang-link" title="Switch to English">
+                <a href="${switchLangLink}" class="lang-link" title="Switch to English">
                     <img src="https://flagcdn.com/w40/gb.png" srcset="https://flagcdn.com/w80/gb.png 2x" width="20" height="15" alt="UK Flag" class="flag-icon"> English
                 </a>
             </div>
