@@ -1,3 +1,9 @@
+my-nav {
+    display: block;   /* Kluczowe! */
+    height: 100%;     /* Musi wypełnić całego rodzica */
+    width: 100%;
+}
+
 /* Kontener wewnątrz Web Componentu */
 .nav-container {
     display: flex;
