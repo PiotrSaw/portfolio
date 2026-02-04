@@ -1,0 +1,57 @@
+td {
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* --- RESPANSYWNOŚĆ DLA TABELI Z CERTYFIKATAMI --- */
+
+@media (max-width: 768px) {
+    /* 1. Zmieniamy tabelę w zwykłe bloki */
+    section.card table, 
+    section.card tbody, 
+    section.card tr, 
+    section.card td {
+        display: block;
+        width: 100%;
+    }
+
+    /* 2. Stylujemy "wiersz" jako osobny kontener */
+    section.card tr {
+        margin-bottom: 1.5rem;       /* Odstęp między kursami */
+        border-bottom: 1px solid #eee; /* Linia oddzielająca */
+        padding-bottom: 1.5rem;      /* Odstęp wewnętrzny od linii */
+    }
+
+    /* Ostatni element nie potrzebuje linii na dole */
+    section.card tr:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    /* 3. Stylujemy komórki (tekst i przycisk) */
+    section.card td {
+        padding: 0;
+        text-align: left;
+    }
+
+    /* Pierwsza komórka (Nazwa kursu) */
+    section.card td:first-child {
+        margin-bottom: 1rem;       /* Odstęp między nazwą a przyciskiem */
+        font-weight: 500;          /* Lekkie pogrubienie dla czytelności */
+        line-height: 1.4;
+    }
+
+    /* Druga komórka (Przycisk) */
+    section.card td:last-child {
+        width: 100%;
+    }
+
+    /* 4. Rozciągamy przycisk na całą szerokość ekranu */
+    .btn-download {
+        width: 100%;               /* Przycisk na całą szerokość */
+        justify-content: center;   /* Wyśrodkowanie treści przycisku */
+        box-sizing: border-box;    /* Żeby padding nie psuł szerokości */
+    }
+}
