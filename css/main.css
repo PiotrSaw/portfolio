@@ -15,6 +15,10 @@ p {
     line-height: 1.9;
 }
 
+li {
+    margin-left: 1.5rem;
+}
+
 /* Reset CSS */
 * {
     box-sizing: border-box;
@@ -106,6 +110,45 @@ h1 {
 /* Domyślnie ukryty na komputerach */
 .mobile-header {
     display: none;
+}
+
+/* Styl dla kontenera powrotu */
+.back-nav {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+/* Ikona strzałki */
+.back-link svg {
+    transition: transform 0.3s ease;
+}
+
+/* Efekty Hover */
+.back-link:hover {
+    color: var(--accent-color); /* Zmiana koloru na Twój akcent */
+}
+
+.back-link:hover svg {
+    transform: translateX(-5px); /* Przesunięcie strzałki w lewo */
+}
+
+/* Responsywność - na mobile dajemy trochę więcej miejsca */
+@media (max-width: 768px) {
+    .back-nav {
+        margin-top: 0.5rem;
+    }
 }
 
 /* --- RESPANSYWNOŚĆ (TABLET I TELEFON) --- */
