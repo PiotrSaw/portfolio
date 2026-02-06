@@ -45,56 +45,56 @@
         </nav>
         <main>
           <h1>PassApp</h1>
-          <p class="intro">System do zarządzania hasłami</p>
+          <p class="intro">Password management system</p>
 
           <section class="card">
-            <h2>O systemie</h2>
+            <h2>About the system</h2>
             <p>
-              Aplikacja PassApp została stworzona przez trzyosobowy zespół w ramach projektu inżynierskiego.
-              Celem projektu było opracowanie bezpiecznego systemu do zarządzania hasłami, który umożliwia użytkownikom przechowywanie i organizowanie swoich haseł w sposób bezpieczny i wygodny.
-              Użytkownicy mają dostęp do swoich danych poprzez aplikację desktopową oraz mobilną na platformę iOS. Opiera się o <strong>zero-knowledge architecture</strong>, co oznacza, że nawet twórcy aplikacji nie mają dostępu do przechowywanych haseł.
-              Umożliwia również generowanie silnych haseł, generowanie kodów 2FA (weryfikacja dwuetapowa) oraz sprawdza wycieki haseł w bazie Have I Been Pwned. Projekt został zrealizowany w językach Typescript oraz Swift z wykorzystaniem frameworków takich jak Express,
-              Next.js, React, Electron oraz SwiftUI. Dane przechowywane są w relacyjnej bazie danych PostgreSQL. 
+              PassApp was created by a three-person team as part of an engineering project.
+              The goal of the project was to develop a secure password management system that allows users to store and organize their passwords in a secure and convenient way.
+              Users have access to their data through a desktop application and a mobile application for the iOS platform. It is based on <strong>zero-knowledge architecture</strong>, meaning that even the developers of the application do not have access to stored passwords.
+              It also allows generating strong passwords, generating 2FA (two-factor authentication) codes, and checking for password leaks in the Have I Been Pwned database. The project was implemented in Typescript and Swift using frameworks such as Express,
+              Next.js, React, Electron and SwiftUI. Data is stored in a PostgreSQL relational database. 
             </p> <br>
             <p>
-                W tym projekcie byłem odpowiedzialny za zaprojektowanie i implementację bazy danych oraz serwera REST API wraz z testami integracyjnymi.
-                Serwer jest odpowiedzialny za uwierzytelnianie użytkowników, zarządzanie sesjami, zarządzanie danymi haseł oraz komunikację z aplikacjami klienckimi.
+                In this project, I was responsible for designing and implementing the database and REST API server along with integration tests.
+                The server is responsible for user authentication, session management, password data management, and communication with client applications.
             </p>
           </section>
 
           <section class="card">
-            <h2>Technologie</h2>
+            <h2>Technologies</h2>
             <p>
-              Projekt PassApp wykorzystuje następujące technologie:
+              PassApp Projekt uses this technology stack:
               <ul>
                 <li>Backend: Express, Jest, PostgreSQL, Docker</li>
                 <li>Frontend: React, Next.js, Shadcn, Tailwind CSS, Jest</li>
                 <li>Desktop: Electron</li>
-                <li>Mobilne: SwiftUI (iOS)</li>
+                <li>Mobile: SwiftUI (iOS)</li>
               </ul>
             </p>
           </section>
-
+    
          <section class="card">
-            <h2>Galeria</h2>
-            <p>Zobacz jak prezentuje się interfejs aplikacji na desktopie oraz systemie iOS.</p>
+            <h2>Gallery</h2>
+            <p>See how the application interface looks on desktop and iOS.</p>
             
             <button id="open-gallery" class="btn-download" style="margin-top: 1rem; cursor: pointer;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
-                <span>Otwórz galerię zdjęć</span>
+                <span>Open the gallery</span>
             </button>
 
             <div id="gallery-source" style="display: none;">
-                <img src="../../images/passapp/main.png" alt="Widok główny">
-                <img src="../../images/passapp/addpass.png" alt="Dodanie hasła">
-                <img src="../../images/passapp/details.png" alt="Szczegóły hasła">
-                <img src="../../images/passapp/login.png" alt="Logowanie">
-                <img src="../../images/passapp/settings.png" alt="Ustawienia">
-                <img src="../../images/passapp/main_ios.png" alt="Widok główny iOS">
-                <img src="../../images/passapp/create_account_ios.png" alt="Tworzenie konta iOS">
-                <img src="../../images/passapp/add_pass_ios.png" alt="Dodanie hasła iOS">
-                <img src="../../images/passapp/details_ios.png" alt="Szczegóły hasła iOS">
-                <img src="../../images/passapp/login_ios.png" alt="Logowanie iOS">
+                <img src="../../images/passapp/main.png" alt="Main view">
+                <img src="../../images/passapp/addpass.png" alt="Adding password">
+                <img src="../../images/passapp/details.png" alt="Password details">
+                <img src="../../images/passapp/login.png" alt="Login">
+                <img src="../../images/passapp/settings.png" alt="Settings">
+                <img src="../../images/passapp/main_ios.png" alt="Main view iOS">
+                <img src="../../images/passapp/create_account_ios.png" alt="Creating account iOS">
+                <img src="../../images/passapp/add_pass_ios.png" alt="Adding password iOS">
+                <img src="../../images/passapp/details_ios.png" alt="Password details iOS">
+                <img src="../../images/passapp/login_ios.png" alt="Login iOS">
             </div>
         </section>
 
